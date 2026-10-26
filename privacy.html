@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Backup — Política de Privacidade</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem; line-height: 1.6; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { font-size: .95em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade — Hermes Backup</h1>
+<p><strong>Vigente desde:</strong> 26 de outubro de 2026.</p>
+
+<h2>1. Quem somos</h2>
+<p>
+  O Hermes Backup é uma ferramenta pessoal, sem fins comerciais, mantida pelo
+  próprio autor. Não há outros usuários além dele.
+</p>
+
+<h2>2. Que dados o aplicativo acessa</h2>
+<p>
+  O aplicativo solicita um único escopo do Google:
+  <code>https://www.googleapis.com/auth/drive.file</code>. Esse escopo concede
+  acesso <strong>apenas aos arquivos criados pelo próprio aplicativo</strong>.
+  O aplicativo não acessa, não lê, não lista e não modifica nenhum outro arquivo
+  da conta do Google Drive, nem e-mails, contatos, agenda ou qualquer outro
+  serviço do Google.
+</p>
+
+<h2>3. Que dados são enviados</h2>
+<p>
+  Somente blocos de um repositório de backup criptografado. Os dados são cifrados
+  no computador de origem, com restic, antes de qualquer transmissão. O Google
+  Drive armazena apenas conteúdo cifrado, que não pode ser lido sem a senha de
+  recuperação, mantida exclusivamente pelo autor e nunca enviada a nenhum
+  serviço.
+</p>
+
+<h2>4. Compartilhamento</h2>
+<p>
+  Nenhum dado é compartilhado, vendido, transferido ou divulgado a terceiros.
+  Não há servidores próprios, não há banco de dados remoto, não há analytics e
+  não há rastreamento. O único destino dos dados é a conta do Google Drive do
+  próprio autor.
+</p>
+
+<h2>5. Credenciais</h2>
+<p>
+  O token OAuth emitido pelo Google fica armazenado apenas no computador local,
+  em arquivo de permissão restrita, legível somente pelo usuário do sistema
+  operacional. Ele não é transmitido a nenhum outro destino.
+</p>
+
+<h2>6. Retenção e remoção</h2>
+<p>
+  Os arquivos criados pelo aplicativo permanecem no Google Drive do autor
+  enquanto ele desejar, e podem ser removidos por ele a qualquer momento
+  diretamente no Google Drive. O acesso do aplicativo pode ser revogado a
+  qualquer momento em
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+</p>
+
+<h2>7. Alterações</h2>
+<p>
+  Qualquer alteração nesta política será publicada nesta mesma página, com nova
+  data de vigência.
+</p>
+
+<h2>8. Contato</h2>
+<p>
+  Como o aplicativo tem um único usuário, que é o próprio autor, não há
+  atendimento a terceiros. Qualquer questão sobre esta política pode ser
+  registrada no
+  <a href="https://github.com/henrique9nunes-netizen/hermes-backup/issues">rastreador
+  de issues do repositório</a> onde esta página está publicada.
+</p>
+
+<footer><p><a href="index.html">Início</a></p></footer>
+
+</body>
+</html>
