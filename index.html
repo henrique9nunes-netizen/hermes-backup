@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Backup</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  code { font-size: .95em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+</style>
+</head>
+<body>
+
+<h1>Hermes Backup</h1>
+<p class="sub">Ferramenta pessoal de backup criptografado.</p>
+
+<p>
+  O Hermes Backup é uma ferramenta de uso pessoal que faz cópias de segurança
+  criptografadas dos dados de um assistente Hermes Agent instalado no computador
+  do próprio autor, e envia essas cópias para a pasta do Google Drive do autor.
+</p>
+
+<h2>Como funciona</h2>
+<p>
+  Os dados são criptografados localmente com
+  <a href="https://restic.net/">restic</a> antes de qualquer envio. O Google Drive
+  recebe apenas blocos já cifrados: o conteúdo não é legível pelo serviço de
+  armazenamento nem por terceiros. A transferência usa o
+  <a href="https://rclone.org/">rclone</a>.
+</p>
+
+<h2>Acesso ao Google Drive</h2>
+<p>
+  O aplicativo solicita exclusivamente o escopo
+  <code>https://www.googleapis.com/auth/drive.file</code>, que permite acesso
+  somente aos arquivos que o próprio aplicativo cria. Ele não lê, não altera e
+  não lista nenhum outro arquivo do Google Drive.
+</p>
+
+<h2>Distribuição</h2>
+<p>
+  Não é um produto comercial, não é distribuído a outras pessoas e não possui
+  usuários além do autor.
+</p>
+
+<footer>
+  <p><a href="privacy.html">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
